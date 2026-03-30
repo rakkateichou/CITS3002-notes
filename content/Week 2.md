@@ -100,7 +100,7 @@ A sender wishes to transmit the data `1101` using a CRC divisor of `101`. What i
    ```
 3. **Final Pattern:** Replace the padded zeros with the remainder. Transmitted pattern = **`110101`**.
 
-### Question 3: Physical Layer Theory
+### Question 3: Physical Layer (Theory)
 Explain the difference between NRZ-L and NRZI encoding. Why is NRZI considered more reliable in noisy environments?
 
 **Solution:**
