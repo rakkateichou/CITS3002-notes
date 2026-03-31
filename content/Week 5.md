@@ -104,6 +104,30 @@ Explain how the RTS/CTS exchange solves the Hidden Terminal Problem.
 **Solution:**
 In the Hidden Terminal Problem, a station (C) cannot hear the sender (A) and might transmit, causing a collision at the receiver (B). The RTS/CTS mechanism solves this by having the receiver (B) transmit a CTS (Clear to Send) frame before the actual data transmission begins. Even though C cannot hear A's RTS, it **can** hear B's CTS. When C overhears the CTS, it reads the duration field, updates its Network Allocation Vector (NAV) timer, and remains silent for the duration of A and B's exchange, successfully avoiding a collision.
 
+```mermaid
+sequenceDiagram
+    autonumber
+    participant A as Station A<br/>(Sender)
+    participant B as Station B<br/>(Receiver)
+    participant C as Station C<br/>(Hidden from A)
+
+    Note over A, C: Context: C is out of A's radio range, but inside B's range.
+    
+    A->>B: RTS (Request to Send)
+    Note over C: C does NOT hear A's RTS
+
+    B->>A: CTS (Clear to Send)
+    B-->>C: CTS (Broadcast overheard by C)
+
+    Note over C: C reads time duration in CTS<br/>Updates NAV (Network Allocation Vector)<br/>Enters SILENT state
+
+    A->>B: DATA Transmission
+    Note over C: C remains silent <br/>(Successfully avoiding collision at B!)
+    
+    B->>A: ACK (Acknowledgment)
+    
+    Note over C: NAV timer expires.<br/>C is now free to transmit.
+```
 ### Question 4: Dijkstra's Algorithm (Theory)
 In Dijkstra’s shortest path algorithm, what is the difference between a "tentative" label and a "permanent" label on a node?
 
