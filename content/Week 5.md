@@ -63,6 +63,7 @@ In an IEEE 802.11 wireless network, the bit error probability is $p = 10^{-4}$. 
 * CTS = 112 bits
 * Data = 12,000 bits
 * ACK = 112 bits
+
 Calculate the numerical probability that the entire exchange (RTS, CTS, Data, ACK) is completed successfully in one attempt.
 
 **Solution:**
