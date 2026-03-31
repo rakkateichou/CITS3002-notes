@@ -29,24 +29,33 @@ To manage the immense complexity of network communication, functions are separat
 2. **Data Link Layer (Layer 2):** Takes raw bits and constructs logical chunks called **frames**. Performs limited error detection/recovery. *MAC addresses operate here.*
 3. **Network Layer (Layer 3):** Routes data between systems across networks using **logical addresses** (like IP addresses). *IP protocol operates here.*
 4. **Transport Layer (Layer 4):** Provides reliable end-to-end service independent of network topology (Flow control, congestion control, connection management). *TCP operates here.*
-5. **Session Layer (Layer 5):** Manages the dialogue/conversation between end systems (synchronization & negotiation).
+5. **Session Layer (Layer 5):** Manages the dialogue/conversation between end systems (synchronisation & negotiation).
 6. **Presentation Layer (Layer 6):** Provides standard formats for transferred info (data encoding, display technologies).
 7. **Application Layer (Layer 7):** Interface to the user. Allows apps (browsers, email) to access network services. *HTTP operates here.*
 
 ```mermaid
-flowchart BT
-    L1["<b>Layer 1: Physical</b> (<b>P</b>lease)<br/><i>Transmits raw bits (0s & 1s). Electrical/mechanical interfaces.</i>"]
-    L2["<b>Layer 2: Data Link</b> (<b>D</b>o)<br/><i>Constructs frames. MAC addresses. Limited error recovery.</i>"]
-    L3["<b>Layer 3: Network</b> (<b>N</b>ot)<br/><i>Routes data. Logical addressing (IP protocol).</i>"]
-    L4["<b>Layer 4: Transport</b> (<b>T</b>hrow)<br/><i>Reliable end-to-end service. Flow/congestion control (TCP).</i>"]
-    L5["<b>Layer 5: Session</b> (<b>S</b>ausage)<br/><i>Manages dialogue, synchronization, & negotiation.</i>"]
-    L6["<b>Layer 6: Presentation</b> (<b>P</b>izza)<br/><i>Standard formats, data encoding, & display.</i>"]
-    L7["<b>Layer 7: Application</b> (<b>A</b>way)<br/><i>Interface to user apps (HTTP).</i>"]
+flowchart LR
 
-    L1 --- L2 --- L3 --- L4 --- L5 --- L6 --- L7
+    L1["<div style='text-align:center;'><span style='color:#000; font-size:14px;'>L1 · Please</span><br/><strong style='font-size:18px;'>Physical</strong></div>"]
+    
+    L2["<div style='text-align:center;'><span style='color:#000; font-size:14px;'>L2 · Do</span><br/><strong style='font-size:18px;'>Data Link</strong></div>"]
+    
+    L3["<div style='text-align:center;'><span style='color:#000; font-size:14px;'>L3 · Not</span><br/><strong style='font-size:18px;'>Network</strong></div>"]
+    
+    L4["<div style='text-align:center;'><span style='color:#000; font-size:14px;'>L4 · Throw</span><br/><strong style='font-size:18px;'>Transport</strong></div>"]
+    
+    L5["<div style='text-align:center;'><span style='color:#000; font-size:14px;'>L5 · Sausage</span><br/><strong style='font-size:18px;'>Session</strong></div>"]
+    
+    L6["<div style='text-align:center;'><span style='color:#000; font-size:14px;'>L6 · Pizza</span><br/><strong style='font-size:18px;'>Presentation</strong></div>"]
+    
+    L7["<div style='text-align:center;'><span style='color:#000; font-size:14px;'>L7 · Away</span><br/><strong style='font-size:18px;'>Application</strong></div>"]
 
-    classDef osiLayer fill:transparent,stroke:#888,stroke-width:2px;
-    class L1,L2,L3,L4,L5,L6,L7 osiLayer;
+    L1 --> L2
+    L2 --> L3
+    L3 --> L4
+    L4 --> L5
+    L5 --> L6
+    L6 --> L7
 ```
 ### The TCP/IP Model (4 Layers)
 *Based specifically on the Internet (rather than a generic standard like OSI).*
