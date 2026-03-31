@@ -111,22 +111,22 @@ sequenceDiagram
     participant B as Station B<br/>(Receiver)
     participant C as Station C<br/>(Hidden from A)
 
-    Note over A, C: Context: C is out of A's radio range, but inside B's range.
+    Note over A, C: Context: C is out of A's radio range,<br/>but is inside B's radio range.
     
     A->>B: RTS (Request to Send)
-    Note over C: C does NOT hear A's RTS
+    Note over C: C does NOT<br/>hear A's RTS
 
     B->>A: CTS (Clear to Send)
-    B-->>C: CTS (Broadcast overheard by C)
+    B-->>C: CTS (Broadcast overheard)
 
-    Note over C: C reads time duration in CTS<br/>Updates NAV (Network Allocation Vector)<br/>Enters SILENT state
+    Note over C: Reads time duration in CTS.<br/>Updates NAV (Network<br/>Allocation Vector) timer.<br/>Enters SILENT state.
 
     A->>B: DATA Transmission
-    Note over C: C remains silent <br/>(Successfully avoiding collision at B!)
+    Note over C: C remains silent.<br/>(Successfully avoids<br/>collision at B!)
     
     B->>A: ACK (Acknowledgment)
     
-    Note over C: NAV timer expires.<br/>C is now free to transmit.
+    Note over C: NAV timer expires.<br/>C is now free<br/>to transmit.
 ```
 ### Question 4: Dijkstra's Algorithm (Theory)
 In Dijkstra’s shortest path algorithm, what is the difference between a "tentative" label and a "permanent" label on a node?
