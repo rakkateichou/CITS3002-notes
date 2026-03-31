@@ -33,6 +33,24 @@ To manage the immense complexity of network communication, functions are separat
 6. **Presentation Layer (Layer 6):** Provides standard formats for transferred info (data encoding, display technologies).
 7. **Application Layer (Layer 7):** Interface to the user. Allows apps (browsers, email) to access network services. *HTTP operates here.*
 
+```mermaid
+flowchart BT
+    %% Define the nodes with HTML formatting for bolding and italics
+    L1["<b>Layer 1: Physical</b> (<b>P</b>lease)<br/><i>Transmits raw bits (0s & 1s). Electrical/mechanical interfaces.</i>"]
+    L2["<b>Layer 2: Data Link</b> (<b>D</b>o)<br/><i>Constructs frames. MAC addresses. Limited error recovery.</i>"]
+    L3["<b>Layer 3: Network</b> (<b>N</b>ot)<br/><i>Routes data. Logical addressing (IP protocol).</i>"]
+    L4["<b>Layer 4: Transport</b> (<b>T</b>hrow)<br/><i>Reliable end-to-end service. Flow/congestion control (TCP).</i>"]
+    L5["<b>Layer 5: Session</b> (<b>S</b>ausage)<br/><i>Manages dialogue, synchronization, & negotiation.</i>"]
+    L6["<b>Layer 6: Presentation</b> (<b>P</b>izza)<br/><i>Standard formats, data encoding, & display.</i>"]
+    L7["<b>Layer 7: Application</b> (<b>A</b>way)<br/><i>Interface to user apps (HTTP).</i>"]
+
+    %% Link them together to create the stack look
+    L1 --- L2 --- L3 --- L4 --- L5 --- L6 --- L7
+
+    %% Add a little styling so it pops nicely in Obsidian
+    classDef osiLayer fill:transparent,stroke:#888,stroke-width:2px;
+    class L1,L2,L3,L4,L5,L6,L7 osiLayer;
+```
 ### The TCP/IP Model (4 Layers)
 *Based specifically on the Internet (rather than a generic standard like OSI).*
 1. Network Access Layer
