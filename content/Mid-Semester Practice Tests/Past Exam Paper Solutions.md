@@ -23,7 +23,8 @@ for slot in range(total_slots):
     
     transmitting_nodes = []
     
-    # 1-Persistent: If a node has data and its backoff timer is 0, it transmits immediately
+    # 1-Persistent: If a node has data and its backoff timer is 0, 
+    # it transmits immediately
     for i in range(N):
         if nodes[i]["has_data"] and nodes[i]["backoff_timer"] == 0:
             transmitting_nodes.append(i)
@@ -56,7 +57,8 @@ for slot in range(total_slots):
             nodes[i]["backoff_timer"] -= 1
 
 # --- Calculating Maximum Channel Utilization ---
-# Channel utilization (Efficiency) is the fraction of time the channel was doing useful work.
+# Channel utilization (Efficiency) is the fraction of time 
+# the channel was doing useful work.
 channel_utilization = successful_slots / total_slots
 print("Channel Utilization:", channel_utilization)
 ```
