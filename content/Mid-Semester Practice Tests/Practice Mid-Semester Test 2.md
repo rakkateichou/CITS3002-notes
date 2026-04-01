@@ -54,7 +54,7 @@ Router A receives routing table updates from both neighbors regarding destinatio
 
 ---
 
-## ✅ Solutions & Explanations
+## Solutions & Explanations
 
 ### Question 1: ALOHA Probability & Throughput
 **a) Total Load ($G$) = 0.2 frames per frame time.**

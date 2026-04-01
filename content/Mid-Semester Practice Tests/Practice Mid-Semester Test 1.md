@@ -51,7 +51,7 @@ Router X receives routing table updates from both neighbors regarding a faraway 
 
 ---
 
-## ✅ Solutions & Explanations
+## Solutions & Explanations
 
 ### Question 1: Layers and Addressing
 **a)** A **MAC address** is a physical address permanently assigned to the device's Network Interface Card (NIC) by the manufacturer during assembly. An **IP address** is a logical address that is assigned dynamically when a device connects to a network, meaning it changes depending on the device's location in the network topology.

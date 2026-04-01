@@ -71,7 +71,7 @@ After Step 1 of Dijkstra's algorithm, Node A is marked as **Permanent**. Node B 
 
 ---
 
-## ✅ Solutions & Explanations
+## Solutions & Explanations
 
 ### Question 1: Latency & Physical Layer
 **a) $T_{trans}$ = 0.12 ms**
