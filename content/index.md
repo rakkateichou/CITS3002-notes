@@ -3,11 +3,15 @@ title: CITS3002 - Computer Networks
 ---
 # Index
 
-- [[Practice Mid-Semester Test 1]]
-- [[Practice Mid-Semester Test 2]]
-- [[Practice Mid-Semester Test 3]]
+## Lecture Material
 - [[Week 1]]
 - [[Week 2]]
 - [[Week 3]]
 - [[Week 4]]
 - [[Week 5]]
+
+## Mid-Semester Practice Tests
+- [[Practice Mid-Semester Test 1]]
+- [[Practice Mid-Semester Test 2]]
+- [[Practice Mid-Semester Test 3]]
+
