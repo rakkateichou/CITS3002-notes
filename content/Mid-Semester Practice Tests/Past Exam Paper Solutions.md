@@ -159,4 +159,3 @@ The structure relies on encapsulation, looking like nested dolls:
     *   **IPsec** was added for Network Layer encryption and authentication.
     *   **TLS/SSL** was added above TCP for Transport Layer encryption (creating HTTPS).
     *   **SSH** was created for secure remote Application access.
-```

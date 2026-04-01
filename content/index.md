@@ -11,8 +11,8 @@ title: CITS3002 - Computer Networks
 - [[Week 5]]
 
 ## Mid-Semester Practice Tests
+- [[Past Exam Paper Solutions]]
 - [[Practice Mid-Semester Test 1]]
 - [[Practice Mid-Semester Test 2]]
 - [[Practice Mid-Semester Test 3]]
-- [[Past Exam Paper Solutions]]
 
