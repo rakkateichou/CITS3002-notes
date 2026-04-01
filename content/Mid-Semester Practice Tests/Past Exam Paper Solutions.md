@@ -12,8 +12,10 @@
 N = 10  # number of nodes
 nodes = []
 for i in range(N):
-    # Each node tracks if it has data, its collision count, and slots to wait
-    nodes.append({"has_data": True, "collisions": 0, "backoff_timer": 0})
+    # Each node tracks if it has data, 
+    # its collision count, and slots to wait
+    nodes.append({"has_data": True, "collisions": 0, 
+				"backoff_timer": 0})
 
 total_slots = 10000
 successful_slots = 0
@@ -47,9 +49,11 @@ for slot in range(total_slots):
             if c > 10:
                 c = 10 
             
-            # Pick a random number of slots to wait from [0, 2^c - 1]
+            # Pick a random number of 
+            # slots to wait from [0, 2^c - 1]
             max_val = (2**c) - 1
-            nodes[node_id]["backoff_timer"] = random_integer(0, max_val)
+            nodes[node_id]["backoff_timer"] = \
+		            random_integer(0, max_val)
             
     # End of slot: decrement backoff timers for waiting nodes
     for i in range(N):
