@@ -1,4 +1,4 @@
-# Week 7: Network Layer (Part 2) - Addressing, Routing & IP
+# Network Layer (Part 2) - Addressing, Routing & IP
 
 ## 1. Forwarding vs. Routing
 *   **Forwarding (The "Doer"):** Moves packets from a router's input port to the correct output port. Happens at extremely short timescales (nanoseconds) and is implemented in **hardware**.

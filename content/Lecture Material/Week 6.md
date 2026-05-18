@@ -1,4 +1,4 @@
-# Week 6: Network Layer Routing & Algorithms
+# Network Layer Routing & Algorithms
 
 ## 1. Network Layer Basics (Layer 3)
 While the Data Link Layer handles transmission across a *single* link, the **Network Layer** routes packets end-to-end across multiple different networks (Internetworking).

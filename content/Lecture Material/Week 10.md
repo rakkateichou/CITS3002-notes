@@ -1,4 +1,4 @@
-# Week 10: Application Layer & Network Security
+# Application Layer & Network Security
 
 ## 1. Web and HTTP (Hypertext Transfer Protocol)
 HTTP is the foundation of the World Wide Web. It uses a **Client/Server** model and relies on **TCP** for transport.

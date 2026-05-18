@@ -1,4 +1,4 @@
-# Week 9: Transport Layer (Part 2) - TCP & Applications
+# Transport Layer (Part 2) - TCP & Applications
 
 ## 1. Demultiplexing Review
 How the receiver directs an incoming transport-layer segment to the correct application socket.

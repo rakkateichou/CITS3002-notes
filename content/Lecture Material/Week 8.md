@@ -1,4 +1,4 @@
-# Week 8: Transport Layer - Part 1
+# Transport Layer - Part 1
 
 ## 1. Transport Layer vs. Network Layer
 *   **Network Layer (Layer 3):** Provides **logical host-to-host** communication. It routes packets between different machines but offers a "best-effort," unreliable service.
