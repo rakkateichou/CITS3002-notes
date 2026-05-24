@@ -14,6 +14,7 @@ title: CITS3002 - Computer Networks
 - [[Week 8]]
 - [[Week 9]]
 - [[Week 10]]
+- [[Week 11]]
 
 ## Mid-Semester Explanations
 - [[Main Exam]]
