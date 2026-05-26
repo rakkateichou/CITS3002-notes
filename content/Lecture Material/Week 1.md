@@ -93,3 +93,5 @@ Topology refers to the physical and logical network layout.
 ## Lab 1 Key Takeaways
 * **IP Address (Logical Address):** Operates at the **Network Layer (L3)**. Represents a device's location in a network structure rather than the physical hardware. It *can change* when you connect to a different network.
 * **MAC Address (Physical Address):** Operates at the **Data Link Layer (L2)**. Uniquely identifies the device's Network Interface Card (NIC). It is permanently assigned by the manufacturer and *never changes*.
+
+hui
